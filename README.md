@@ -1,6 +1,6 @@
 # xAPI Video Community of Practice
 
-This community is creating profiles of the xAPI to identify and standardize video interactions that can be tracked.
+This community is creating profile of the xAPI to identify and standardize video interactions that can be tracked.
 
 ## xAPI Video CoP Meetings
 
