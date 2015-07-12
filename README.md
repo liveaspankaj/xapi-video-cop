@@ -9,3 +9,18 @@ The xAPI Video Community of Practice has a Web conference 1st Tuesday of every m
 Please visit the Wiki for details and Meeting Minutes:  
 https://github.com/liveaspankaj/xapi-video-cop/wiki
 
+## xAPI Video CoP Google Group
+
+* URL: https://groups.google.com/forum/#!members/xapi-video-cop
+
+## xAPI Video CoP General Information
+
+* URL: http://bit.ly/1BB4pOH
+
+## xAPI Video CoP Members List
+
+* URL: http://bit.ly/1yHdp43 
+
+
+
+
