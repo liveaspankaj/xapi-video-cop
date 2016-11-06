@@ -27,3 +27,7 @@ Internationalized Resource Identifier
 ## IRL
 
 Internationalized Resource Locator
+
+## LMS
+
+Learning Management System
