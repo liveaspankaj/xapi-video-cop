@@ -1,2 +1,0 @@
-# xAPI Statement Data Model
-
