@@ -31,3 +31,7 @@ Internationalized Resource Locator
 ## LMS
 
 Learning Management System
+
+## URI
+
+Uniform Resource Identifier
