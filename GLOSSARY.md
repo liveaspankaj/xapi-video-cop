@@ -19,3 +19,7 @@ Application Programming Interface
 ## JSON
 
 JavaScript Object Notation
+
+## IRI
+
+Internationalized Resource Identifier
