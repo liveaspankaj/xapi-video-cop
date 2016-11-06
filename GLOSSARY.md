@@ -35,3 +35,7 @@ Learning Management System
 ## URI
 
 Uniform Resource Identifier
+
+## URL
+
+Uniform Resource Locator
