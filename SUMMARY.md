@@ -3,6 +3,6 @@
 * [Introduction](README.md)
 * [Summary](SUMMARY.md)
 * [Overview](overview.md)
-* [xAPI Statement Data Model](statement_data_model.md)
 * References
+* [xAPI Statement Data Model](statement_data_model.md)
 
