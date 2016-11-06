@@ -4,5 +4,5 @@
 * [Summary](SUMMARY.md)
 * [Overview](overview.md)
 * [xAPI Statement Data Model](statement_data_model.md)
-* References
+* [References](references.md)
 
