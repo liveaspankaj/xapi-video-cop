@@ -23,3 +23,7 @@ JavaScript Object Notation
 ## IRI
 
 Internationalized Resource Identifier
+
+## IRL
+
+Internationalized Resource Locator
