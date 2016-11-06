@@ -1,6 +1,6 @@
 # References
 
-The following referenced documents are indispensable for the application of this specification. 
+The following referenced resources are indispensable for the application of this specification. 
 
 * "Experience API", version 1.0.3, ADL<br>
 https://github.com/adlnet/xAPI-Spec/blob/xAPI-1.0.3/xAPI.md
