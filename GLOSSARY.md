@@ -28,6 +28,13 @@ Learning Management System
 
 Learning Record Provider 
 
+An xAPI Client that sends data to Learning Record Store(s). Often, the Learning Record Provider will create Learning Records while monitoring a learner as a part of a Learning Experience.
+
+
+## LRS
+
+Learning Record Store
+
 ## URI
 
 Uniform Resource Identifier
@@ -35,9 +42,3 @@ Uniform Resource Identifier
 ## URL
 
 Uniform Resource Locator
-
-## LRS
-
-Learning Record Store
-
-A server (i.e. system capable of receiving and processing web requests) that is responsible for receiving, storing, and providing access to Learning Records.
