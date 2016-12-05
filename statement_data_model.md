@@ -42,6 +42,15 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td>Used when the actor generally played a video or clicked the play button. Also used when the video starts after an actor seeked to a new position in video.</td></tr>
 </table>
 
+<a name="verbs_paused"></a>
+###2.3.2 Paused
+<table>
+<tr><th align="left">Verb</th><td>Paused</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/verbs/paused</td></tr>
+<tr><th align="left">Description</th><td>Indicates that the actor started experiencing the recorded media object.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Initialized" in the first statement in the video session.  The LRP MUST NOT issue multiple statements with "Initialized" for the same video session.</td></tr>
+<tr><th align="left">Usage</th><td>Used when the actor generally played a video or clicked the play button. Also used when the video starts after an actor seeked to a new position in video.</td></tr>
+</table>
 
 ##Extensions
 
