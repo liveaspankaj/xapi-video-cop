@@ -230,7 +230,22 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.4.8 Speed
+###2.4.8 Video Size
+
+<table>
+<tr><th align="left">Extension</th><td>video-size
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/video-size</td></tr>
+<tr><th align="left">Description</th><td>Used to identify the size in Width x Height of the video as viewed by the user.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600). i.e. e.g., 360, 480, 720, 1080, etc.</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+
+###2.4.9 Speed
 
 <table>
 <tr><th align="left">Extension</th><td>speed
@@ -252,7 +267,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </table>
 
 
-###2.4.9 Track
+###2.4.10 Track
 
 <table>
 <tr><th align="left">Extension</th><td>track
@@ -267,3 +282,32 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
+###2.4.11 User Agent
+
+<table>
+<tr><th align="left">Extension</th><td>user-agent
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/user-agent</td></tr>
+<tr><th align="left">Description</th><td>Used to identify the User Agent string of the browser, if the video is launched in browser.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be a string.</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+
+###2.4.12 Volume
+
+<table>
+<tr><th align="left">Extension</th><td>volume
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/volume</td></tr>
+<tr><th align="left">Description</th><td>Used to identify the loudness of sound specified for a media object.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be a float value between 0 and 1. </li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td>Minimum 0 = Mute. Maximum 1 = 100% Volume</td></tr>
+</table>
