@@ -209,7 +209,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Description</th><td>Used to express the video resolution or quality.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
-<li>Value is a string i.e. e.g., 360, 480, 720, 1080, 2160, sd, hd, 4k, 8k etc.</li>
+<li>Value is a string. e.g. 360, 480, 720, 1080, 2160, sd, hd, 4k, 8k etc.</li>
 </ul>
 </td></tr>
 <tr><th align="left">Usage</th><td></td></tr>
