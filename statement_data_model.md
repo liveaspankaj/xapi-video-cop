@@ -180,7 +180,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Description</th><td>Used to express the frame rate or frames per second of a video (or average rate of frames per second in the case of variable frame-rate).</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 </td></tr>
-<tr><th align="left">Usage</th><td>Represented as a ratio of time base over frame duration, such as 30000/1001 or as a decimal, such as 29.970.</td></tr>
+<tr><th align="left">Usage</th><td>Represented as a decimal, such as 29.970.</td></tr>
 </table>
 
 ###2.4.5 Full Screen
