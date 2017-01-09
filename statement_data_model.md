@@ -200,16 +200,16 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </table>
  
 
-###2.4.6 Resolution
+###2.4.6 Quality
 
 <table>
-<tr><th align="left">Extension</th><td>resolution
+<tr><th align="left">Extension</th><td>quality
 </td></tr>
-<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/resolution</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/quality</td></tr>
 <tr><th align="left">Description</th><td>Used to express the video resolution or quality.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
-<li>Value MUST be an integer i.e. e.g., 360, 480, 720, 1080, etc.	</li>
+<li>Value is a string i.e. e.g., 360, 480, 720, 1080, 2160, sd, hd, 4k, 8k etc.</li>
 </ul>
 </td></tr>
 <tr><th align="left">Usage</th><td></td></tr>
@@ -230,12 +230,12 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.4.8 Video Size
+###2.4.8 Video Playback Size
 
 <table>
-<tr><th align="left">Extension</th><td>video-size
+<tr><th align="left">Extension</th><td>video-playback-size
 </td></tr>
-<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/video-size</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/video-playback-size</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the size in Width x Height of the video as viewed by the user.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
