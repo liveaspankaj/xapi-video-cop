@@ -38,32 +38,232 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Verb</th><td>Played</td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/verbs/played</td></tr>
 <tr><th align="left">Description</th><td>Indicates that the actor started experiencing the recorded media object.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Initialized" in the first statement in the video session.  The LRP MUST NOT issue multiple statements with "Initialized" for the same video session.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Played" when the actor starts experiencing the media.</td></tr>
 <tr><th align="left">Usage</th><td>Used when the actor generally played a video or clicked the play button. Also used when the video starts after an actor seeked to a new position in video.</td></tr>
 </table>
 
 <a name="verbs_paused"></a>
-###2.3.2 Paused
+###2.3.3 Paused
 <table>
 <tr><th align="left">Verb</th><td>Paused</td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/verbs/paused</td></tr>
-<tr><th align="left">Description</th><td>Indicates that the actor started experiencing the recorded media object.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Initialized" in the first statement in the video session.  The LRP MUST NOT issue multiple statements with "Initialized" for the same video session.</td></tr>
-<tr><th align="left">Usage</th><td>Used when the actor generally played a video or clicked the play button. Also used when the video starts after an actor seeked to a new position in video.</td></tr>
+<tr><th align="left">Description</th><td>Indicates that the actor temporary or permanently stopped experiencing the recorded media object.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Paused" when the media is stopped. A paused statement MUST be sent before a terminated or abandoned statement if not already sent.</td></tr>
+<tr><th align="left">Usage</th><td>Indicates that the actor temporary or permanently stopped experiencing the recorded media object.</td></tr>
 </table>
 
-##Extensions
+<a name="verbs_seeked"></a>
+###2.3.4 Seeked
+<table>
+<tr><th align="left">Verb</th><td>Seeked</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/verbs/seeked</td></tr>
+<tr><th align="left">Description</th><td>Indicates the actor changed the progress towards a specific point.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Seeked" when the Actor moves the progress bar forward or backward to a specific time in video.</td></tr>
+<tr><th align="left">Usage</th><td>Used in combination with time-from and time-to extensions when the Actor moves the progress bar forward or backward to a specific time in the video.</td></tr>
+</table>
 
-###Session ID
+<a name="verbs_interacted"></a>
+###2.3.5 Interacted
+<table>
+<tr><th align="left">Verb</th><td>Interacted</td></tr>
+<tr><th align="left">ID</th><td>http://adlnet.gov/expapi/verbs/interacted</td></tr>
+<tr><th align="left">Description</th><td>Used to express that the actor interacted with the player (except play, pause, seek). e.g. mute, unmute, change resolution, change player size, etc.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional</td></tr>
+<tr><th align="left">Usage</th><td>Used to express that the actor interacted with the player (except play, pause, seek). e.g. mute, unmute, change resolution, change player size, etc.</td></tr>
+</table>
 
-The LRP can assign a Session ID to all the statements sent during a session. 
 
-The value of the Session ID must match the statement id of the first statement of the session, i.e. the initialized statement. 
+<a name="verbs_completed"></a>
+###2.3.6 Completed
+<table>
+<tr><th align="left">Verb</th><td>Completed</td></tr>
+<tr><th align="left">ID</th><td>http://adlnet.gov/expapi/verbs/completed</td></tr>
+<tr><th align="left">Description</th><td>Used to express that the actor completed a video by watching all parts of the video at least once.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Completed" when the Actor has completed a video by watching all parts of the video at least once.
+</td></tr>
+<tr><th align="left">Usage</th><td>Used to express that the actor completed a video by watching all parts of the video at least once.</td></tr>
+</table>
 
-A session starts with the initialized statement when a learner starts a video.
+<a name="verbs_terminated"></a>
+###2.3.7 Terminated
+<table>
+<tr><th align="left">Verb</th><td>Terminated</td></tr>
+<tr><th align="left">ID</th><td>http://adlnet.gov/expapi/verbs/terminated</td></tr>
+<tr><th align="left">Description</th><td>Used to express that the actor ended a video.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional. 
+<ul>
+<li>The LRP MAY use "Terminated" when the Actor has terminated the video. </li>
+<li>A "Paused" statement MUST before sent before "Terminated" statement if not already sent.</li>
+<li>Any statements after this in the current video session MUST NOT be sent, and will be ignored if sent.</li>
+</ul>
 
-The session ends with a terminated or abandoned verb. 
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td>Used to express that the actor ended a video. </td></tr>
+</table>
 
-Session ID is Optional.
+<a name="verbs_abandoned"></a>
+###2.3.8 Abandoned
+<table>
+<tr><th align="left">Verb</th><td>Abandoned</td></tr>
+<tr><th align="left">ID</th><td>http://adlnet.gov/expapi/verbs/abandoned</td></tr>
+<tr><th align="left">Description</th><td>Used to express that the activity provider was able to determine that the session was terminated, however,a terminated statement was not received due to a failure.</td></tr>
+<tr><th align="left" nowrap>LRP/LRS/LMS Obligations</th><td>Optional.
+<ul>
+<li>The LRP, LRS or LMS MAY use "Abandoned" when it is determined that the session was terminated, however,a terminated statement was not received due to a failure. </li>
+<li>A "Paused" statement MUST before sent before "Abandoned" statement if not already sent.</li>
+<li>Any statements after this in the current video session MUST NOT be sent, and will be ignored if sent.</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td>Used to express that the activity provider was able to determine that the session was terminated, however,a terminated statement was not received due to a failure.</td></tr>
+</table>
 
+##2.4 Context Extensions
+
+###2.4.1 Session ID
+
+<table>
+<tr><th align="left">Extension</th><td>session-id
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/session-id</td></tr>
+<tr><th align="left">Description</th><td>Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated or abandoned statement.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>The LRP SHOULD assign a session id to all the statements sent during a session.</li>
+<li>Value of session id MUST be the UUID statement id of the initiated statement, i.e. the initialized statement. </li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+
+
+###2.4.2 CC/Subtitle Enabled
+
+<table>
+<tr><th align="left">Extension</th><td>cc-subtitle-enabled
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/cc-subtitle-enabled</td></tr>
+<tr><th align="left">Description</th><td>Used to expresses whether subtitle or closed captioning is enabled.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be boolean i.e. true or false.	</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+
+
+###2.4.3 CC/Subtitle Language
+<table>
+<tr><th align="left">Extension</th><td>cc-subtitle-lang
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/cc-subtitle-lang</td></tr>
+<tr><th align="left">Description</th><td>Used to express the language of subtitle or closed captioning.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Used only when cc-subtitle-enabled is true.</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td>The lexical and value spaces of xsd:language are the set of language codes defined by RFC 1766. Examples: "en" for English or "en-US" for American English
+</td></tr>
+</table>
+
+###2.4.4 Frame Rate
+
+<table>
+<tr><th align="left">Extension</th><td>frame-rate
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/frame-rate</td></tr>
+<tr><th align="left">Description</th><td>Used to express the frame rate or frames per second of a video (or average rate of frames per second in the case of variable frame-rate).</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+</td></tr>
+<tr><th align="left">Usage</th><td>Represented as a ratio of time base over frame duration, such as 30000/1001 or as a decimal, such as 29.970.</td></tr>
+</table>
+
+###2.4.5 Full Screen
+
+<table>
+<tr><th align="left">Extension</th><td>full-screen
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/full-screen</td></tr>
+<tr><th align="left">Description</th><td>Used to expresses that the video is played in full screen mode.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be boolean i.e. true or false.	</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+ 
+
+###2.4.6 Resolution
+
+<table>
+<tr><th align="left">Extension</th><td>resolution
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/resolution</td></tr>
+<tr><th align="left">Description</th><td>Used to express the video resolution or quality.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be an integer i.e. e.g., 360, 480, 720, 1080, etc.	</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+
+###2.4.7 Screen Size	
+
+<table>
+<tr><th align="left">Extension</th><td>screen-size
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/screen-size</td></tr>
+<tr><th align="left">Description</th><td>Used to express the device playback screen size or the maximum available screen size for Video playback.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600). i.e. e.g., 360, 480, 720, 1080, etc.</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+
+###2.4.8 Speed
+
+<table>
+<tr><th align="left">Extension</th><td>speed
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/speed</td></tr>
+<tr><th align="left">Description</th><td>Used to express the play-back speed.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be represented with decimal or integer values along with an 'x' meaning multiplying factor to the normal speed. e.g. -2x, -1x, -0.5x, 0.5x, 1x, 2x.</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td>
+<ul>
+<li>Negative value means rewind. e.g. -1x, -2x</li>
+<li>Positive value with value greater than 1x means fast forward. e.g. 1.5x, 2x, 4x</li>
+<li>Positive value with value less than 1x means slow motion play back. e.g. 0.5x, 0.25x, 0.125x</li>
+</ul>
+</td></tr>
+</table>
+
+
+###2.4.9 Track
+
+<table>
+<tr><th align="left">Extension</th><td>track
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/track</td></tr>
+<tr><th align="left">Description</th><td>Used to identify the name of the audio track in a media object.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be a string.</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
 
