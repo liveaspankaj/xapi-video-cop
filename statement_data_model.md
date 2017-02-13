@@ -126,6 +126,128 @@ The Object represents the video or media being consumed by the Actor.
 
 ##2.5 Result
 
+Result is an optional property that represents a measured outcome related to the Statement in which it is included.
+
+It may be present in a statement depending on the verb used.
+
+###2.5.1 Score
+
+A score is not required to be reported. If a score is reported, it must be as per the xAPI Spec. 
+
+###2.5.2 Success
+
+The "success" property of the result MUST be set to true for the 'completed' statement. 
+
+Other Video Profile statements MUST NOT include the "success" property.
+
+###2.5.3 Completion
+
+The "completion" property of the result MUST be set to true for the 'completed' statement. 
+
+Other Video Profile statements MUST NOT include the "completion" property.
+
+###2.5.4 Duration
+
+The "duration" property is an ISO 8601 formatted time value. 
+
+Duration should be included in "completed" statement and should represent total time spent consuming the video under current registration. e.g. P218S
+
+###2.5.5 Result Extensions
+
+There are several additional results related values defined in Video Profile that can be added to the statement under result extensions. 
+
+###2.5.5.1 Time
+
+<table>
+<tr><th align="left">Extension</th><td>time
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time</td></tr>
+<tr><th align="left">Description</th><td>Used to express the time into the video.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>The LRP MUST assign time value to statements with "played", "paused", "terminated", "interacted" and "completed" verbs.</li>
+<li>Float Value with maximum 3 decimals.</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td>Example: "23.560" represents video position at 23 seconds and 560 milliseconds.</td></tr>
+</table>
+
+###2.5.5.2 Time From
+
+<table>
+<tr><th align="left">Extension</th><td>time-from
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time-from</td></tr>
+<tr><th align="left">Description</th><td>Used to identify the point in time the actor changed from in a media object during a seek operation.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>The LRP MUST assign time-from value to statements with "seeked" verbs only.</li>
+<li>Float Value with maximum 3 decimals.</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td>Example: "23.560" represents video position at 23 seconds and 560 milliseconds.</td></tr>
+</table>
+
+###2.5.5.3 Time To
+
+<table>
+<tr><th align="left">Extension</th><td>time-to
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time-from</td></tr>
+<tr><th align="left">Description</th><td>Used to identify the point in time the actor changed to in a media object during a seek operation.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>The LRP MUST assign time-to value to statements with "seeked" verbs only.</li>
+<li>Float Value with maximum 3 decimals.</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td>Example: "23.560" represents video position at 23 seconds and 560 milliseconds.</td></tr>
+</table>
+
+
+###2.5.5.4 Progress
+
+<table>
+<tr><th align="left">Extension</th><td>progress
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/progress</td></tr>
+<tr><th align="left">Description</th><td>Used to expresses the percentage of media consumed by the actor.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>The LRP MUST assign progress value to statements with "paused", "terminated" and "completed" verbs.</li>
+<li>The LRP MAY assign progress value to other statements.</li>
+<li>Value is a decimal between 0.0 and 1.0.</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td>The progress value includes all attempts made during the current registration. </td></tr>
+</table>
+
+###2.5.5.5 Heat Map Value
+
+
+<table>
+<tr><th align="left">Extension</th><td>heat-map
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/heat-map</td></tr>
+<tr><th align="left">Description</th><td>Heat map data showing parts of the video the actor watched during current registration in chronological order.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>The LRP MUST assign heat-map value to statements with "paused", "terminated" and "completed" verbs.</li>
+<li>The LRP MAY assign heat-map value to other statements.</li>
+<li>Value is a string. Each part of the video watched is separated with [,]. The 'Time From' and 'Time To' values are separated with [.].</li> 
+<li>The time values must match the values recorded as time, time-to and time-from in played, paused, seeked statements.</li>
+</ul>
+
+</td></tr>
+<tr><th align="left">Usage</th><td>The heat-map value includes all attempts made during the current registration. <br>Example:  0.000[.]12.000[,]14.000[.]21.000[,]18.000[.]30.000</td></tr>
+</table>
+
+
+
 ##2.6 Context Extensions
 
 ###2.6.1 Session ID
