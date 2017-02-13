@@ -118,9 +118,17 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td>Used to express that the activity provider was able to determine that the session was terminated, however,a terminated statement was not received due to a failure.</td></tr>
 </table>
 
-##2.4 Context Extensions
+##2.4 Object
 
-###2.4.1 Session ID
+An Object with objectType "Activity" MUST be present, as specified in the xAPI Spec.
+
+The Object represents the video or media being consumed by the Actor.  
+
+##2.5 Result
+
+##2.6 Context Extensions
+
+###2.6.1 Session ID
 
 <table>
 <tr><th align="left">Extension</th><td>session-id
@@ -138,7 +146,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </table>
 
 
-###2.4.2 CC/Subtitle Enabled
+###2.6.2 CC/Subtitle Enabled
 
 <table>
 <tr><th align="left">Extension</th><td>cc-subtitle-enabled
@@ -155,7 +163,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </table>
 
 
-###2.4.3 CC/Subtitle Language
+###2.6.3 CC/Subtitle Language
 <table>
 <tr><th align="left">Extension</th><td>cc-subtitle-lang
 </td></tr>
@@ -171,7 +179,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </td></tr>
 </table>
 
-###2.4.4 Frame Rate
+###2.6.4 Frame Rate
 
 <table>
 <tr><th align="left">Extension</th><td>frame-rate
@@ -183,7 +191,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td>Represented as a decimal, such as 29.970.</td></tr>
 </table>
 
-###2.4.5 Full Screen
+###2.6.5 Full Screen
 
 <table>
 <tr><th align="left">Extension</th><td>full-screen
@@ -200,7 +208,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </table>
  
 
-###2.4.6 Quality
+###2.6.6 Quality
 
 <table>
 <tr><th align="left">Extension</th><td>quality
@@ -215,7 +223,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.4.7 Screen Size	
+###2.6.7 Screen Size	
 
 <table>
 <tr><th align="left">Extension</th><td>screen-size
@@ -230,7 +238,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.4.8 Video Playback Size
+###2.6.8 Video Playback Size
 
 <table>
 <tr><th align="left">Extension</th><td>video-playback-size
@@ -245,7 +253,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.4.9 Speed
+###2.6.9 Speed
 
 <table>
 <tr><th align="left">Extension</th><td>speed
@@ -267,7 +275,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </table>
 
 
-###2.4.10 Track
+###2.6.10 Track
 
 <table>
 <tr><th align="left">Extension</th><td>track
@@ -282,7 +290,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.4.11 User Agent
+###2.6.11 User Agent
 
 <table>
 <tr><th align="left">Extension</th><td>user-agent
@@ -297,7 +305,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.4.12 Volume
+###2.6.12 Volume
 
 <table>
 <tr><th align="left">Extension</th><td>volume
@@ -311,3 +319,4 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 </td></tr>
 <tr><th align="left">Usage</th><td>Minimum 0 = Mute. Maximum 1 = 100% Volume</td></tr>
 </table>
+
