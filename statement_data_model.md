@@ -124,6 +124,14 @@ An Object with objectType "Activity" MUST be present, as specified in the xAPI S
 
 The Object represents the video or media being consumed by the Actor.  
 
+###2.4.1 Definition
+
+Object definition MAY contain name, description and other details of the media, as per the xAPI Spec. 
+
+Object definition MUST be present and MUST contain activity "type" as: https://w3id.org/xapi/video/activity-type/video
+
+
+
 ##2.5 Result
 
 Result is an optional property that represents a measured outcome related to the Statement in which it is included.
@@ -258,10 +266,9 @@ The value for the registration property used in the context object MAY be the va
 The registration value is important because the "progress", the "heat-map" value and "completion" is based on aggregate of all attempts with same registration value attempted by the Actor for the specific media.
 
 
+##2.6.2 Context Extensions
 
-##2.6 Context Extensions
-
-###2.6.1 Session ID
+###2.6.2.1 Session ID
 
 <table>
 <tr><th align="left">Extension</th><td>session-id
@@ -279,7 +286,7 @@ The registration value is important because the "progress", the "heat-map" value
 </table>
 
 
-###2.6.2 CC/Subtitle Enabled
+###2.6.2.2 CC/Subtitle Enabled
 
 <table>
 <tr><th align="left">Extension</th><td>cc-subtitle-enabled
@@ -296,7 +303,7 @@ The registration value is important because the "progress", the "heat-map" value
 </table>
 
 
-###2.6.3 CC/Subtitle Language
+###2.6.2.3 CC/Subtitle Language
 <table>
 <tr><th align="left">Extension</th><td>cc-subtitle-lang
 </td></tr>
@@ -312,7 +319,7 @@ The registration value is important because the "progress", the "heat-map" value
 </td></tr>
 </table>
 
-###2.6.4 Frame Rate
+###2.6.2.4 Frame Rate
 
 <table>
 <tr><th align="left">Extension</th><td>frame-rate
@@ -324,7 +331,7 @@ The registration value is important because the "progress", the "heat-map" value
 <tr><th align="left">Usage</th><td>Represented as a decimal, such as 29.970.</td></tr>
 </table>
 
-###2.6.5 Full Screen
+###2.6.2.5 Full Screen
 
 <table>
 <tr><th align="left">Extension</th><td>full-screen
@@ -341,7 +348,7 @@ The registration value is important because the "progress", the "heat-map" value
 </table>
  
 
-###2.6.6 Quality
+###2.6.2.6 Quality
 
 <table>
 <tr><th align="left">Extension</th><td>quality
@@ -356,7 +363,7 @@ The registration value is important because the "progress", the "heat-map" value
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.6.7 Screen Size	
+###2.6.2.7 Screen Size	
 
 <table>
 <tr><th align="left">Extension</th><td>screen-size
@@ -371,7 +378,7 @@ The registration value is important because the "progress", the "heat-map" value
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.6.8 Video Playback Size
+###2.6.2.8 Video Playback Size
 
 <table>
 <tr><th align="left">Extension</th><td>video-playback-size
@@ -386,7 +393,7 @@ The registration value is important because the "progress", the "heat-map" value
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.6.9 Speed
+###2.6.2.9 Speed
 
 <table>
 <tr><th align="left">Extension</th><td>speed
@@ -408,7 +415,7 @@ The registration value is important because the "progress", the "heat-map" value
 </table>
 
 
-###2.6.10 Track
+###2.6.2.10 Track
 
 <table>
 <tr><th align="left">Extension</th><td>track
@@ -423,7 +430,7 @@ The registration value is important because the "progress", the "heat-map" value
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.6.11 User Agent
+###2.6.2.11 User Agent
 
 <table>
 <tr><th align="left">Extension</th><td>user-agent
@@ -438,7 +445,7 @@ The registration value is important because the "progress", the "heat-map" value
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
-###2.6.12 Volume
+###2.6.2.12 Volume
 
 <table>
 <tr><th align="left">Extension</th><td>volume
