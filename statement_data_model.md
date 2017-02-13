@@ -265,10 +265,17 @@ The value for the registration property used in the context object MAY be the va
 
 The registration value is important because the "progress", the "heat-map" value and "completion" is based on aggregate of all attempts with same registration value attempted by the Actor for the specific media.
 
+###2.6.2 Language
 
-##2.6.2 Context Extensions
+Code representing the language in which the experience being recorded in this Statement (mainly) occurred in, if applicable and known. 
 
-###2.6.2.1 Session ID
+Language is used to provide the spoken language for the audio.
+
+The value must be RFC 5646, e.g en, en-US, etc
+
+###2.6.2 Context Extensions
+
+####2.6.2.1 Session ID
 
 <table>
 <tr><th align="left">Extension</th><td>session-id
