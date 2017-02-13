@@ -247,6 +247,17 @@ There are several additional results related values defined in Video Profile tha
 </table>
 
 
+##2.6 Context
+
+All Video Profile statements MUST contain a context that includes all objects/values as defined in this section.  
+
+###2.6.1 Registration
+
+The value for the registration property used in the context object MAY be the value provided by the LMS via the launch URL. If registration is not provided via the launch mechanism, the LRP MAY set a fixed registration value.
+
+The registration value is important because the "progress", the "heat-map" value and "completion" is based on aggregate of all attempts with same registration value attempted by the Actor for the specific media.
+
+
 
 ##2.6 Context Extensions
 
