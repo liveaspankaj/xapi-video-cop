@@ -25,5 +25,11 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
 * URL: http://bit.ly/1yHdp43 
 
 
+## xAPI Video Profile (current draft)
+
+[Online Version](https://liveaspankaj.gitbooks.io/xapi-video-profile/content/SUMMARY.html) 
+
+<b>Downloads:</b> [PDF](https://www.gitbook.com/download/pdf/book/liveaspankaj/xapi-video-profile) | [Mobi](https://www.gitbook.com/download/mobi/book/liveaspankaj/xapi-video-profile) | [ePub](https://www.gitbook.com/download/epub/book/liveaspankaj/xapi-video-profile) 
+
 
 
