@@ -161,7 +161,7 @@ Other Video Profile statements MUST NOT include the "completion" property.
 
 The "duration" property is an ISO 8601 formatted time value. 
 
-Duration should be included in "completed" statement and should represent total time spent consuming the video under current registration. e.g. P218S
+Duration MUST be included in "completed" statement and MUST represent total time spent consuming the video under current registration. e.g. P218S
 
 ###2.5.5 Result Extensions
 
