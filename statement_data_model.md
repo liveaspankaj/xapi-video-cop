@@ -84,7 +84,7 @@ The "success" property of the result MUST be set to true for this statement.<br>
 The "duration" property of the result MUST be included in this statement and MUST represent total time spent during consuming the video under current registration. e.g. P218S
 
 </td></tr>
-<tr><th align="left">Usage</th><td>Used to express that the actor completed a video by watching all parts of the video at least once.</td></tr>
+<tr><th align="left">Usage</th><td>Used to express that the actor completed a video by watching all parts of the video at least once. The progress result extension is used to calculate the duration and completion of video.</td></tr>
 </table>
 
 <a name="verbs_terminated"></a>
