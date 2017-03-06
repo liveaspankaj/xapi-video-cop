@@ -234,7 +234,7 @@ There are several additional results related values defined in Video Profile tha
 </ul>
 
 </td></tr>
-<tr><th align="left">Usage</th><td>The progress value includes all attempts made during the current registration. </td></tr>
+<tr><th align="left">Usage</th><td>The progress value includes all attempts made during the current registration. The heatmap extension can be used to calculate the progress.</td></tr>
 </table>
 
 ###2.5.5.5 Heat Map Value
