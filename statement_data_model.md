@@ -96,7 +96,7 @@ The "duration" property of the result MUST be included in this statement and MUS
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional. 
 <ul>
 <li>The LRP MAY use "Terminated" when the Actor has terminated the video. </li>
-<li>A "Paused" statement MUST before sent before "Terminated" statement if not already sent.</li>
+<li>A "Paused" statement MUST be sent before "Terminated" statement if not already sent.</li>
 <li>Any statements after this in the current video session MUST NOT be sent, and will be ignored if sent.</li>
 </ul>
 
@@ -114,7 +114,7 @@ The "duration" property of the result MUST be included in this statement and MUS
 <tr><th align="left" nowrap>LRP/LRS/LMS Obligations</th><td>Optional.
 <ul>
 <li>The LRP, LRS or LMS MAY use "Abandoned" when it is determined that the session was terminated, however,a terminated statement was not received due to a failure. </li>
-<li>A "Paused" statement MUST before sent before "Abandoned" statement if not already sent.</li>
+<li>A "Paused" statement MUST be sent before "Abandoned" statement if not already sent.</li>
 <li>Any statements after this in the current video session MUST NOT be sent, and will be ignored if sent.</li>
 </ul>
 </td></tr>
