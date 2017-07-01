@@ -6,7 +6,7 @@ This community is creating profile of the xAPI to identify and standardize video
 
 The xAPI Video Community of Practice has a Web conference every month to actively work on the project.
 
-**Day/Time:** 1st Mondays of every month at 3:00-4:00PM US Eastern Time<Br><br>
+**Day/Time:** 1st Mondays of every month at 3:00-4:00PM US Eastern Time<Br>
 
 **Meeting Link:** https://www.nextsoftwaresolutions.com/VideoCoPMeeting/ 
 
