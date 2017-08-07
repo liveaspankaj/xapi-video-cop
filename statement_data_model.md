@@ -221,24 +221,29 @@ There are several additional results related values defined in Video Profile tha
 <tr><th align="left">Usage</th><td>The progress value includes all attempts made during the current registration. The heatmap extension can be used to calculate the progress.</td></tr>
 </table>
 
-###2.5.5.5 Heat Map Value
+###2.5.5.5 Played Segments
 
 
 <table>
-<tr><th align="left">Extension</th><td>heat-map
+<tr><th align="left">Extension</th><td>played-segments
 </td></tr>
-<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/heat-map</td></tr>
-<tr><th align="left">Description</th><td>Heat map data showing parts of the video the actor watched during current registration in chronological order.</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/played-segments
+</td></tr>
+<tr><th align="left">Description</th><td>Played segments
+ data shows parts of the video the actor watched during current registration in chronological order.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
-<li>The LRP MUST assign heat-map value to statements with "paused", "terminated" and "completed" verbs.</li>
-<li>The LRP MAY assign heat-map value to other statements.</li>
+<li>The LRP MUST assign played-segments value to statements with "paused", "terminated" and "completed" verbs.</li>
+<li>The LRP MAY assign played-segments value to other statements.</li>
 <li>Value is a string. Each part of the video watched is separated with [,]. The 'Time From' and 'Time To' values are separated with [.].</li> 
 <li>The time values must match the values recorded as time, time-to and time-from in played, paused, seeked statements.</li>
 </ul>
 
 </td></tr>
-<tr><th align="left">Usage</th><td>The heat-map value includes all attempts made during the current registration. <br>Example:  0.000[.]12.000[,]14.000[.]21.000[,]18.000[.]30.000</td></tr>
+<tr><th align="left">Usage</th><td>The played-segments value includes all attempts made during the current registration. It is used for computing the progress and completion. It can also be used to generate heat map of the users consumption of the video. 
+<br/>Example:  0.000[.]12.000[,]14.000[.]21.000[,]18.000[.]30.000</td>
+</td>
+</tr>
 </table>
 
 
@@ -250,7 +255,7 @@ All Video Profile statements MUST contain a context that includes all objects/va
 
 The value for the registration property used in the context object MAY be the value provided by the LMS via the launch URL. If registration is not provided via the launch mechanism, the LRP MAY set a fixed registration value.
 
-The registration value is important because the "progress", the "heat-map" value and "completion" is based on aggregate of all attempts with same registration value attempted by the Actor for the specific media.
+The registration value is important because the "progress", the "played-segments" value and "completion" is based on aggregate of all attempts with same registration value attempted by the Actor for the specific media.
 
 ###2.6.2 Language
 
