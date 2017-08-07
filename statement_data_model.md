@@ -48,7 +48,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Verb</th><td>Paused</td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/verbs/paused</td></tr>
 <tr><th align="left">Description</th><td>Indicates that the actor temporary or permanently stopped experiencing the recorded media object.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Paused" when the media is stopped. A paused statement MUST be sent before a terminated or abandoned statement if not already sent.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Paused" when the media is stopped. A paused statement MUST be sent before a terminated statement if not already sent.</td></tr>
 <tr><th align="left">Usage</th><td>Indicates that the actor temporary or permanently stopped experiencing the recorded media object.</td></tr>
 </table>
 
@@ -103,22 +103,6 @@ The "duration" property of the result MUST be included in this statement and MUS
 </ul>
 </td></tr>
 <tr><th align="left">Usage</th><td>Used to express that the actor ended a video. </td></tr>
-</table>
-
-<a name="verbs_abandoned"></a>
-###2.3.8 Abandoned
-<table>
-<tr><th align="left">Verb</th><td>Abandoned</td></tr>
-<tr><th align="left">ID</th><td>http://adlnet.gov/expapi/verbs/abandoned</td></tr>
-<tr><th align="left">Description</th><td>Used to express that the activity provider was able to determine that the session was terminated, however,a terminated statement was not received due to a failure.</td></tr>
-<tr><th align="left" nowrap>LRP/LRS/LMS Obligations</th><td>Optional.
-<ul>
-<li>The LRP, LRS or LMS MAY use "Abandoned" when it is determined that the session was terminated, however,a terminated statement was not received due to a failure. </li>
-<li>A "Paused" statement MUST be sent before "Abandoned" statement if not already sent.</li>
-<li>Any statements after this in the current video session MUST NOT be sent, and will be ignored if sent.</li>
-</ul>
-</td></tr>
-<tr><th align="left">Usage</th><td>Used to express that the activity provider was able to determine that the session was terminated, however,a terminated statement was not received due to a failure.</td></tr>
 </table>
 
 ##2.4 Object
@@ -284,7 +268,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left">Extension</th><td>session-id
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/session-id</td></tr>
-<tr><th align="left">Description</th><td>Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated or abandoned statement.</td></tr>
+<tr><th align="left">Description</th><td>Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated statement.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
 <li>The LRP SHOULD assign a session id to all the statements sent during a session.</li>
