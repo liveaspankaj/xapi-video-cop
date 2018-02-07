@@ -474,3 +474,17 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
+###2.6.2 Context Activities
+
+####2.6.2.1 Category
+
+<table>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video</td></tr>
+<tr><th align="left">Description</th><td>xAPI Video Profile statement</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Must.
+<ul>
+<li>The LRP MUST identify all applicable video statements as conformant to the xAPI video profile.</li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td>Identifies a statement as conforming to the xAPI Video Profile</td></tr>
+</table>
