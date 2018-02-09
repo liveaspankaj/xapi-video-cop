@@ -81,7 +81,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">Description</th><td>Used to express that the actor completed a video by watching all parts of the video at least once.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Completed" when the Actor has completed a video by watching all parts of the video at least once.<br>
 The "success" property of the result MUST be set to true for this statement.<br>
-The "duration" property of the result MUST be included in this statement and MUST represent total time spent during consuming the video under current registration. e.g. P218S
+The "duration" property of the result MUST be included in this statement and MUST represent total time spent during consuming the video under current registration. e.g. PT218S
 
 </td></tr>
 <tr><th align="left">Usage</th><td>Used to express that the actor completed a video by watching all parts of the video at least once. The progress and heatmap result extension can be used to calculate the duration and completion of video.</td></tr>
@@ -145,7 +145,7 @@ Other Video Profile statements MUST NOT include the "completion" property.
 
 The "duration" property is an ISO 8601 formatted time value. 
 
-Duration MUST be included in "completed" statement and MUST represent total time spent consuming the video under current registration. e.g. P218S
+Duration MUST be included in "completed" statement and MUST represent total time spent consuming the video under current registration. e.g. PT218S
 
 ###2.5.5 Result Extensions
 
