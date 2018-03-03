@@ -218,8 +218,15 @@ var interactedStatement = {
       }]
     },
     "extensions": {
-      "https://w3id.org/xapi/video/extensions/session-id": sessionID,
+      "https://w3id.org/xapi/video/extensions/full-screen": fullScreenOrNot,
+      "https://w3id.org/xapi/video/extensions/screen-size": screenSize,
+      "https://w3id.org/xapi/video/extensions/video-playback-size": playbackSize,
+      "https://w3id.org/xapi/video/extensions/quality": quality,
       "https://w3id.org/xapi/video/extensions/cc-enabled": ccEnabled,
+      "https://w3id.org/xapi/video/extensions/cc-subtitle-lang": ccLanguage,
+      "https://w3id.org/xapi/video/extensions/speed": playbackRate + "x",
+      "https://w3id.org/xapi/video/extensions/user-agent": userAgent,
+      "https://w3id.org/xapi/video/extensions/volume": volume,
       "https://w3id.org/xapi/video/extensions/cc-subtitle-lang": ccLanguage,
     }
   },
