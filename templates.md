@@ -50,8 +50,6 @@ var initializedStmt = {
 };
 ```
 
-
-
 ## Played
 
 ```
@@ -94,8 +92,6 @@ var playedStmt = {
   },
 };
 ```
-
-
 
 ## Paused
 
@@ -142,8 +138,6 @@ var pausedStmt = {
 };
 ```
 
-
-
 ## Seeked
 
 ```
@@ -188,8 +182,6 @@ var seekedStmt = {
 };
 ```
 
-
-
 ## Interacted
 
 ```
@@ -233,8 +225,6 @@ var interactedStatement = {
   },
 };
 ```
-
-
 
 ## Completed
 
@@ -281,8 +271,6 @@ var completedStmt = {
   },
 };
 ```
-
-
 
 ## Terminated
 
