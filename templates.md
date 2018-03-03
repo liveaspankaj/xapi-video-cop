@@ -43,8 +43,10 @@ var initializedStmt = {
       "https://w3id.org/xapi/video/extensions/speed": playbackRate + "x",
       "https://w3id.org/xapi/video/extensions/user-agent": userAgent,
       "https://w3id.org/xapi/video/extensions/volume": volume,
+      "https://w3id.org/xapi/video/extensions/frame-rate": frameRate,
+      "https://w3id.org/xapi/video/extensions/track": audioTrack,
+      "https://w3id.org/xapi/video/extensions/length": videoLength,
       "https://w3id.org/xapi/video/extensions/session-id": sessionID
-
     }
   },
 };
@@ -227,7 +229,7 @@ var interactedStatement = {
       "https://w3id.org/xapi/video/extensions/speed": playbackRate + "x",
       "https://w3id.org/xapi/video/extensions/user-agent": userAgent,
       "https://w3id.org/xapi/video/extensions/volume": volume,
-      "https://w3id.org/xapi/video/extensions/cc-subtitle-lang": ccLanguage,
+      "https://w3id.org/xapi/video/extensions/session-id": sessionID
     }
   },
 };
