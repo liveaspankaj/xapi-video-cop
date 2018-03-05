@@ -80,7 +80,7 @@ LRP MUST use the below verbs that are indicated as mandatory in other sections o
 <tr><th align="left">ID</th><td>http://adlnet.gov/expapi/verbs/completed</td></tr>
 <tr><th align="left">Description</th><td>Used to express that the actor completed a video by watching all parts of the video at least once.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>The LRP MUST use "Completed" when the Actor has completed a video by watching all parts of the video at least once.<br>
-The "success" property of the result MUST be set to true for this statement.<br>
+The "completion" property of the result MUST be set to true for this statement.<br>
 The "duration" property of the result MUST be included in this statement and MUST represent total time spent during consuming the video under current registration. e.g. PT218S
 
 </td></tr>
@@ -129,29 +129,24 @@ It may be present in a statement depending on the verb used.
 
 A score is not required to be reported. If a score is reported, it must be as per the xAPI Spec. 
 
-###2.5.2 Success
 
-The "success" property of the result MUST be set to true for the 'completed' statement. 
-
-Other Video Profile statements MUST NOT include the "success" property.
-
-###2.5.3 Completion
+###2.5.2 Completion
 
 The "completion" property of the result MUST be set to true for the 'completed' statement. 
 
 Other Video Profile statements MUST NOT include the "completion" property.
 
-###2.5.4 Duration
+###2.5.3 Duration
 
 The "duration" property is an ISO 8601 formatted time value. 
 
 Duration MUST be included in "completed" statement and MUST represent total time spent consuming the video under current registration. e.g. PT218S
 
-###2.5.5 Result Extensions
+###2.5.4 Result Extensions
 
 There are several additional results related values defined in Video Profile that can be added to the statement under result extensions. 
 
-###2.5.5.1 Time
+###2.5.4.1 Time
 
 <table>
 <tr><th align="left">Extension</th><td>time
@@ -168,7 +163,7 @@ There are several additional results related values defined in Video Profile tha
 <tr><th align="left">Usage</th><td>Example: "23.560" represents video position at 23 seconds and 560 milliseconds.</td></tr>
 </table>
 
-###2.5.5.2 Time From
+###2.5.4.2 Time From
 
 <table>
 <tr><th align="left">Extension</th><td>time-from
@@ -185,7 +180,7 @@ There are several additional results related values defined in Video Profile tha
 <tr><th align="left">Usage</th><td>Example: "23.560" represents video position at 23 seconds and 560 milliseconds.</td></tr>
 </table>
 
-###2.5.5.3 Time To
+###2.5.4.3 Time To
 
 <table>
 <tr><th align="left">Extension</th><td>time-to
@@ -203,7 +198,7 @@ There are several additional results related values defined in Video Profile tha
 </table>
 
 
-###2.5.5.4 Progress
+###2.5.4.4 Progress
 
 <table>
 <tr><th align="left">Extension</th><td>progress
@@ -221,7 +216,7 @@ There are several additional results related values defined in Video Profile tha
 <tr><th align="left">Usage</th><td>The progress value includes all attempts made during the current registration. The heatmap extension can be used to calculate the progress.</td></tr>
 </table>
 
-###2.5.5.5 Played Segments
+###2.5.4.5 Played Segments
 
 
 <table>
