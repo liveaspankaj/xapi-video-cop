@@ -264,7 +264,7 @@ var completedStmt = {
       "https://w3id.org/xapi/video/extensions/time": currentTime,
       "https://w3id.org/xapi/video/extensions/progress": progress
     },
-    "success" : boolean,
+    "completion" : boolean,
     "duration" : lengthOfVideo
   },
   "context": {
