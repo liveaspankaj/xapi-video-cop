@@ -19,7 +19,7 @@ When the video is launched in an LMS, Actor must be provided by the LMS.
 
 The following xAPI verbs are defined in this specification.
 
-LRP MUST use the below verbs that are indicated as mandatory in other sections of this specification.
+LRP MUST use the below verbs that are indicated as mandatory in other sections of this specification. 
 
 <a name="verbs_initialized"></a>
 ###2.3.1 Initialized
