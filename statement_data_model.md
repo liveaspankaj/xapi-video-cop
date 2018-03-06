@@ -209,7 +209,7 @@ There are several additional results related values defined in Video Profile tha
 <ul>
 <li>The LRP MUST assign progress value to statements with "paused", "terminated" and "completed" verbs.</li>
 <li>The LRP MAY assign progress value to other statements.</li>
-<li>Value is a decimal between 0.0 and 1.0.</li>
+<li>Value is a decimal between 0.000 and 1.000.</li>
 </ul>
 
 </td></tr>
