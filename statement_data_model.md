@@ -185,7 +185,7 @@ There are several additional results related values defined in Video Profile tha
 <table>
 <tr><th align="left">Extension</th><td>time-to
 </td></tr>
-<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time-from</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time-to</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the point in time the actor changed to in a media object during a seek operation.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
