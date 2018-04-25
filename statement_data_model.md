@@ -366,7 +366,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left">Description</th><td>Used to express the device playback screen size or the maximum available screen size for Video playback.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
-<li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600). i.e. e.g., 360, 480, 720, 1080, etc.</li>
+<li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600</li>
 </ul>
 </td></tr>
 <tr><th align="left">Usage</th><td></td></tr>
@@ -381,7 +381,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left">Description</th><td>Used to identify the size in Width x Height of the video as viewed by the user.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
-<li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600). i.e. e.g., 360, 480, 720, 1080, etc.</li>
+<li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600</li>
 </ul>
 </td></tr>
 <tr><th align="left">Usage</th><td></td></tr>
