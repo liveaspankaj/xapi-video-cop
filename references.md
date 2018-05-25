@@ -11,4 +11,6 @@ https://www.ietf.org/rfc/rfc3987.txt
 * The JSON Data Interchange Format<br>
  http://json.org/
  
+* RFC 5646 Language Tags<br>
+https://www.w3.org/International/articles/language-tags/
  
