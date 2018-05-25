@@ -309,7 +309,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </ul>
 
 </td></tr>
-<tr><th align="left">Usage</th><td>The lexical and value spaces of xsd:language are the set of language codes defined by RFC 1766. Examples: "en" for English or "en-US" for American English
+<tr><th align="left">Usage</th><td>The lexical and value spaces of xsd:language are the set of language codes defined by RFC 5646. Examples: "en" for English or "en-US" for American English
 </td></tr>
 </table>
 
