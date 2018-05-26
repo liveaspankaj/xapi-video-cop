@@ -46,7 +46,8 @@ var initializedStmt = {
       "https://w3id.org/xapi/video/extensions/frame-rate": frameRate,
       "https://w3id.org/xapi/video/extensions/track": audioTrack,
       "https://w3id.org/xapi/video/extensions/length": videoLength,
-      "https://w3id.org/xapi/video/extensions/session-id": sessionID
+      "https://w3id.org/xapi/video/extensions/session-id": sessionID,
+      "https://w3id.org/xapi/video/extensions/completion-threshold": threshold
     }
   },
 };
