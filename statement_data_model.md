@@ -472,7 +472,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 ###2.6.2.14 Completion Threshold
 
 <table>
-<tr><th align="left">Extension</th><td>length
+<tr><th align="left">Extension</th><td>completion-threshold
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/completion-threshold</td></tr>
 <tr><th align="left">Description</th><td>Completion Threshold specifies the percentage of media that should be consumed to trigger a completion.</td></tr>
