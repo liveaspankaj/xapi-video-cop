@@ -461,7 +461,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/length</td></tr>
 <tr><th align="left">Description</th><td>The actual length of the media in seconds.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>Required.
 <ul>
 <li>Value MUST be a float value with maximum 3 decimals. </li>
 <li>It MUST be included in Video Profile statements with these verbs: initialized, completed, terminated and paused. </li>
