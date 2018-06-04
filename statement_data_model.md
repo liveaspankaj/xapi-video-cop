@@ -463,8 +463,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left">Description</th><td>The actual length of the media in seconds.</td></tr>
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
-<li>Value MUST be a float value with maximum 3 decimals.
-. </li>
+<li>Value MUST be a float value with maximum 3 decimals. </li>
 </ul>
 </td></tr>
 <tr><th align="left">Usage</th><td></td></tr>
