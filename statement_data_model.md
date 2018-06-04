@@ -464,6 +464,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
 <ul>
 <li>Value MUST be a float value with maximum 3 decimals. </li>
+<li>It MUST be included in Video Profile statements with these verbs: initialized, completed, terminated and paused. </li>
 </ul>
 </td></tr>
 <tr><th align="left">Usage</th><td></td></tr>
