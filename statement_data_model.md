@@ -469,6 +469,23 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left">Usage</th><td></td></tr>
 </table>
 
+###2.6.2.14 Completion Threshold
+
+<table>
+<tr><th align="left">Extension</th><td>length
+</td></tr>
+<tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/completion-threshold</td></tr>
+<tr><th align="left">Description</th><td>The actual length of the media in seconds.</td></tr>
+<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<ul>
+<li>Value MUST be between 0 and 1. </li>
+<li>Value MUST be a float value with maximum 3 decimals. </li>
+</ul>
+</td></tr>
+<tr><th align="left">Usage</th><td></td></tr>
+</table>
+
+
 ###2.6.2 Context Activities
 
 ####2.6.2.1 Category
