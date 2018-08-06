@@ -153,7 +153,7 @@ There are several additional results related values defined in Video Profile tha
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time</td></tr>
 <tr><th align="left">Description</th><td>Used to express the time into the video.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>The LRP MUST assign time value to statements with "played", "paused", "terminated", "interacted" and "completed" verbs.</li>
 <li>Float Value with maximum 3 decimals.</li>
@@ -170,7 +170,7 @@ There are several additional results related values defined in Video Profile tha
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time-from</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the point in time the actor changed from in a media object during a seek operation.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>The LRP MUST assign time-from value to statements with "seeked" verbs only.</li>
 <li>Float Value with maximum 3 decimals.</li>
@@ -187,7 +187,7 @@ There are several additional results related values defined in Video Profile tha
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/time-to</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the point in time the actor changed to in a media object during a seek operation.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>The LRP MUST assign time-to value to statements with "seeked" verbs only.</li>
 <li>Float Value with maximum 3 decimals.</li>
@@ -205,7 +205,7 @@ There are several additional results related values defined in Video Profile tha
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/progress</td></tr>
 <tr><th align="left">Description</th><td>Used to expresses the percentage of media consumed by the actor.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>The LRP MUST assign progress value to statements with "paused", "terminated" and "completed" verbs.</li>
 <li>The LRP MAY assign progress value to other statements.</li>
@@ -226,7 +226,7 @@ There are several additional results related values defined in Video Profile tha
 </td></tr>
 <tr><th align="left">Description</th><td>Played segments
  data shows parts of the video the actor watched during current registration in chronological order.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>The LRP MUST assign played-segments value to statements with "paused", "terminated" and "completed" verbs.</li>
 <li>The LRP MAY assign played-segments value to other statements.</li>
@@ -269,7 +269,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/session-id</td></tr>
 <tr><th align="left">Description</th><td>Used to tell which session the statement is part of. A session starts with the initiated statement and ends with terminated statement.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>The LRP SHOULD assign a session id to all the statements sent during a session.</li>
 <li>Value of session id MUST be the UUID statement id of the initiated statement, i.e. the initialized statement. </li>
@@ -287,7 +287,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/cc-subtitle-enabled</td></tr>
 <tr><th align="left">Description</th><td>Used to expresses whether subtitle or closed captioning is enabled.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be boolean i.e. true or false.	</li>
 </ul>
@@ -303,7 +303,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/cc-subtitle-lang</td></tr>
 <tr><th align="left">Description</th><td>Used to express the language of subtitle or closed captioning.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Used only when cc-subtitle-enabled is true.</li>
 </ul>
@@ -320,7 +320,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/frame-rate</td></tr>
 <tr><th align="left">Description</th><td>Used to express the frame rate or frames per second of a video (or average rate of frames per second in the case of variable frame-rate).</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 </td></tr>
 <tr><th align="left">Usage</th><td>Represented as a decimal, such as 29.970.</td></tr>
 </table>
@@ -332,7 +332,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/full-screen</td></tr>
 <tr><th align="left">Description</th><td>Used to expresses that the video is played in full screen mode.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be boolean i.e. true or false.	</li>
 </ul>
@@ -349,7 +349,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/quality</td></tr>
 <tr><th align="left">Description</th><td>Used to express the video resolution or quality.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value is a string. e.g. 360, 480, 720, 1080, 2160, sd, hd, 4k, 8k etc.</li>
 </ul>
@@ -364,7 +364,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/screen-size</td></tr>
 <tr><th align="left">Description</th><td>Used to express the device playback screen size or the maximum available screen size for Video playback.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600</li>
 </ul>
@@ -379,7 +379,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/video-playback-size</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the size in Width x Height of the video as viewed by the user.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be in WxH format in pixels. e.g. 1080x960, 640x480, 800x600</li>
 </ul>
@@ -394,7 +394,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/speed</td></tr>
 <tr><th align="left">Description</th><td>Used to express the play-back speed.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be represented with decimal or integer values along with an 'x' meaning multiplying factor to the normal speed. e.g. -2x, -1x, -0.5x, 0.5x, 1x, 2x.</li>
 </ul>
@@ -416,7 +416,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/track</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the name of the audio track in a media object.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be a string.</li>
 </ul>
@@ -431,7 +431,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/user-agent</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the User Agent string of the browser, if the video is launched in browser.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be a string.</li>
 </ul>
@@ -446,7 +446,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/volume</td></tr>
 <tr><th align="left">Description</th><td>Used to identify the loudness of sound specified for a media object.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be a float value between 0 and 1. </li>
 </ul>
@@ -461,7 +461,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/length</td></tr>
 <tr><th align="left">Description</th><td>The actual length of the media in seconds.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Required.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be a float value with maximum 3 decimals. </li>
 <li>It MUST be included in Video Profile statements with these verbs: initialized, completed, terminated and paused. </li>
@@ -477,7 +477,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">ID</th><td>https://w3id.org/xapi/video/extensions/completion-threshold</td></tr>
 <tr><th align="left">Description</th><td>Completion Threshold specifies the percentage of media that should be consumed to trigger a completion.</td></tr>
-<tr><th align="left" nowrap>LRP Obligations</th><td>Optional.
+<tr><th align="left" nowrap>LRP Obligations</th><td>
 <ul>
 <li>Value MUST be between 0 and 1. </li>
 <li>Value MUST be a float value with maximum 3 decimals. </li>
@@ -502,9 +502,9 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr><th align="left">Usage</th><td>Identifies a statement as conforming to the xAPI Video Profile</td></tr>
 </table>
 
-###2.7 Summary of Extensions
+###2.7 Summary of Extensions Usage
 <table>
-<tr><th align="left">Verbs</th><th>Required</th><th>Optional</th><th>Notes</th></tr>
+<tr><th align="left">Verbs</th><th>Required</th><th>Optional</th></tr>
 
 
 <tr>
@@ -512,7 +512,6 @@ The value must be RFC 5646, e.g en, en-US, etc
 <td>
 <b>Context Extensions</b>
 <ul>
-<li>Session ID</li>
 <li>Length</li>
 <li>Completion Threshold (if value < 1)</li>
 </ul>
@@ -522,6 +521,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <b>Context Extensions
 </b>
 <ul>
+<li>Session ID</li>
 <li>CC/Subtitle Enabled</li>
 <li>CC/Subtitle Language</li>
 <li>Frame Rate</li>
@@ -536,8 +536,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <li>Completion Threshold (if value = 1)</li>
 </ul>
 </td>
-<td>
-</td>
+
 </tr>
 
 
@@ -545,11 +544,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr>
 <th align="left">Played</th>
 <td>
-<b>Context Extensions</b>
-<ul>
-<li>Session ID</li>
-</ul>
-<br>
+
 <b>Result Extensions</b>
 <ul>
 <li>Time</li>
@@ -557,10 +552,14 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td>
 
 <td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+
 </td>
 
-<td>
-</td>
 </tr>
 
 
@@ -568,11 +567,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr>
 <th align="left">Paused</th>
 <td>
-<b>Context Extensions</b>
-<ul>
-<li>Session ID</li>
-</ul>
-<br>
+
 <b>Result Extensions</b>
 <ul>
 <li>Time</li>
@@ -582,10 +577,14 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td>
 
 <td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+
 </td>
 
-<td>
-</td>
 </tr>
 
 
@@ -593,11 +592,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr>
 <th align="left">Seeked</th>
 <td>
-<b>Context Extensions</b>
-<ul>
-<li>Session ID</li>
-</ul>
-<br>
+
 <b>Result Extensions</b>
 <ul>
 <li>Time From</li>
@@ -606,32 +601,35 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td>
 
 <td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+
 <b>Result Extensions</b>
 <ul>
+<li>Length</li>
 <li>Progress</li>
 <li>Played Segments</li>
 </ul>
 </td>
 </td>
 
-<td>
-</td>
 </tr>
 
 
 <tr>
 <th align="left">Interacted</th>
 <td>
-<b>Context Extensions</b>
-<ul>
-<li>Session ID</li>
-</ul>
+
 </td>
 
 <td>
 <b>Context Extensions
 </b>
 <ul>
+<li>Session ID</li>
 <li>CC/Subtitle Enabled</li>
 <li>CC/Subtitle Language</li>
 <li>Frame Rate</li>
@@ -643,19 +641,14 @@ The value must be RFC 5646, e.g en, en-US, etc
 <li>Volume</li>
 </ul>
 </td>
-<td>
-</td>
+
 </tr>
   
 
 <tr>
 <th align="left">Completed</th>
 <td>
-<b>Context Extensions</b>
-<ul>
-<li>Session ID</li>
-</ul>
-<br>
+
 <b>Result Extensions</b>
 <ul>
 <li>Time</li>
@@ -671,10 +664,14 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td>
 
 <td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+
 </td>
 
-<td>
-</td>
 </tr>
 
 
@@ -697,13 +694,17 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td>
 
 <td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+
 </td>
 
-<td>
-Optional. A "Paused" statement MUST be sent before "Terminated" statement if not already sent.
-</td>
 </tr>
-
   
 </table>
+
+*Session ID is optional. However, it SHOULD be added in all statements, unless there is a reason not to. 
 
