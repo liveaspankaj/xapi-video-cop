@@ -504,7 +504,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 
 ###2.7 Summary of Extensions Usage
 <table>
-<tr><th align="left">Verbs</th><th>Required</th><th>Optional</th></tr>
+<tr><th align="left" width="16%">Verbs</th><th width="42%">Required</th><th width="42%">Optional</th></tr>
 
 
 <tr>
