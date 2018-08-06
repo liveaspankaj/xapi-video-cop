@@ -501,3 +501,209 @@ The value must be RFC 5646, e.g en, en-US, etc
 </td></tr>
 <tr><th align="left">Usage</th><td>Identifies a statement as conforming to the xAPI Video Profile</td></tr>
 </table>
+
+###2.7 Summary of Extensions
+<table>
+<tr><th align="left">Verbs</th><th>Required</th><th>Optional</th><th>Notes</th></tr>
+
+
+<tr>
+<th align="left">Initialized</th>
+<td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+<li>Length</li>
+<li>Completion Threshold (if value < 1)</li>
+</ul>
+</td>
+
+<td>
+<b>Context Extensions
+</b>
+<ul>
+<li>CC/Subtitle Enabled</li>
+<li>CC/Subtitle Language</li>
+<li>Frame Rate</li>
+<li>Full Screen</li>
+<li>Quality</li>
+<li>Screen Size</li>
+<li>Video Playback Size</li>
+<li>Speed</li>
+<li>Track</li>
+<li>User Agent</li>
+<li>Volume</li>
+<li>Completion Threshold (if value = 1)</li>
+</ul>
+</td>
+<td>
+</td>
+</tr>
+
+
+
+<tr>
+<th align="left">Played</th>
+<td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+<b>Result Extensions</b>
+<ul>
+<li>Time</li>
+</ul>
+</td>
+
+<td>
+</td>
+
+<td>
+</td>
+</tr>
+
+
+
+<tr>
+<th align="left">Paused</th>
+<td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+<b>Result Extensions</b>
+<ul>
+<li>Time</li>
+<li>Progress</li>
+<li>Played Segments</li>
+</ul>
+</td>
+
+<td>
+</td>
+
+<td>
+</td>
+</tr>
+
+
+
+<tr>
+<th align="left">Seeked</th>
+<td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+<b>Result Extensions</b>
+<ul>
+<li>Time From</li>
+<li>Time To</li>
+</ul>
+</td>
+
+<td>
+<b>Result Extensions</b>
+<ul>
+<li>Progress</li>
+<li>Played Segments</li>
+</ul>
+</td>
+</td>
+
+<td>
+</td>
+</tr>
+
+
+<tr>
+<th align="left">Interacted</th>
+<td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+</td>
+
+<td>
+<b>Context Extensions
+</b>
+<ul>
+<li>CC/Subtitle Enabled</li>
+<li>CC/Subtitle Language</li>
+<li>Frame Rate</li>
+<li>Full Screen</li>
+<li>Quality</li>
+<li>Video Playback Size</li>
+<li>Speed</li>
+<li>Track</li>
+<li>Volume</li>
+</ul>
+</td>
+<td>
+</td>
+</tr>
+  
+
+<tr>
+<th align="left">Completed</th>
+<td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+<b>Result Extensions</b>
+<ul>
+<li>Time</li>
+<li>Progress</li>
+<li>Played Segments</li>
+</ul>
+<b>Others</b>
+<ul>
+<li>result.completion = true</li>
+<li>result.duration = (total time spent consuming the video under current registration)</total></li>
+</ul>
+  
+</td>
+
+<td>
+</td>
+
+<td>
+</td>
+</tr>
+
+
+<tr>
+<th align="left">Terminated</th>
+<td>
+<b>Context Extensions</b>
+<ul>
+<li>Session ID</li>
+</ul>
+<br>
+<b>Result Extensions</b>
+<ul>
+<li>Time</li>
+<li>Progress</li>
+<li>Played Segments</li>
+</ul>
+
+  
+</td>
+
+<td>
+</td>
+
+<td>
+Optional. A "Paused" statement MUST be sent before "Terminated" statement if not already sent.
+</td>
+</tr>
+
+  
+</table>
+
