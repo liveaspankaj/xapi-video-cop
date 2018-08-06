@@ -567,7 +567,11 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr>
 <th align="left">Paused</th>
 <td>
-
+<b>Context Extensions</b>
+<ul>
+<li>Completion Threshold (if value < 1)</li>
+</ul>
+<br>
 <b>Result Extensions</b>
 <ul>
 <li>Time</li>
@@ -580,6 +584,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <b>Context Extensions</b>
 <ul>
 <li>Session ID</li>
+<li>Completion Threshold (if value = 1)</li>
 </ul>
 <br>
 
@@ -648,6 +653,12 @@ The value must be RFC 5646, e.g en, en-US, etc
 <tr>
 <th align="left">Completed</th>
 <td>
+<b>Context Extensions</b>
+<ul>
+<li>Completion Threshold (if value < 1)</li>
+</ul>
+<br>
+
 
 <b>Result Extensions</b>
 <ul>
@@ -667,6 +678,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <b>Context Extensions</b>
 <ul>
 <li>Session ID</li>
+<li>Completion Threshold (if value = 1)</li>
 </ul>
 <br>
 
@@ -681,8 +693,10 @@ The value must be RFC 5646, e.g en, en-US, etc
 <b>Context Extensions</b>
 <ul>
 <li>Session ID</li>
+<li>Completion Threshold (if value < 1)</li>
 </ul>
 <br>
+
 <b>Result Extensions</b>
 <ul>
 <li>Time</li>
@@ -697,6 +711,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <b>Context Extensions</b>
 <ul>
 <li>Session ID</li>
+<li>Completion Threshold (if value = 1)</li>
 </ul>
 <br>
 
