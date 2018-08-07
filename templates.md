@@ -169,45 +169,53 @@ The following template statements are provided for your convenience and conform 
 ## Seeked
 
 ```
-var seekedStmt = {
-  "actor": actor,
-  "verb": {
-    "id": "https://w3id.org/xapi/video/verbs/seeked",
-    "display": {
-      "en-US": "seeked"
-    }
-  },
-  "object": {
-    "id": objectID,
-    "definition": {
-      "name": {
-        "en-US": activityTitle
-      },
-      "description": {
-        "en-US": activityDesc
-      },
-      "type": "https://w3id.org/xapi/video/activity-type/video"
+{
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
     },
-    "objectType": "Activity"
-  },
-  "result": {
-    "extensions": {
-      "https://w3id.org/xapi/video/extensions/time-from": seekStart,
-      "https://w3id.org/xapi/video/extensions/time-to": currentTime
-    }
-  },
-  "context": {
-    "contextActivities": {
-      "category": [{
-        "id": "https://w3id.org/xapi/video"
-      }]
+    "verb": {
+        "id": "https://w3id.org/xapi/video/verbs/seeked",
+        "display": {
+            "en-US": "seeked"
+        }
     },
-    "extensions": {
-      "https://w3id.org/xapi/video/extensions/session-id": sessionID
-
-    }
-  },
-};
+    "timestamp": "2018-08-07T15:37:53.491Z",
+    "object": {
+        "definition": {
+            "type": "https://w3id.org/xapi/video/activity-type/video",
+            "name": {
+                "en-US": "Ocean Life"
+            },
+            "description": {
+                "en-US": "A short video clip of ocean lifeforms, used by videojs.com as part of their demo."
+            }
+        },
+        "id": "http://vjs.zencdn.net/v/oceans.mp4",
+        "objectType": "Activity"
+    },
+    "result": {
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/time-to": 1.9,
+            "https://w3id.org/xapi/video/extensions/time-from": 4.473
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "https://w3id.org/xapi/video"
+                }
+            ]
+        },
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/session-id": "86c5b148-4462-4da9-a13f-b570c27fa049"
+        },
+        "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
+    },
+    "id": "4183175b-a6b0-4e59-8614-fd9c0d2593dd",
+}
 ```
 
 ## Interacted
