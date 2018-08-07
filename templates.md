@@ -63,44 +63,53 @@ The following template statements are provided for your convenience and conform 
 ## Played
 
 ```
-var playedStmt = {
-  "actor": actor,
-  "verb": {
-    "id": "https://w3id.org/xapi/video/verbs/played",
-    "display": {
-      "en-US": "played"
-    }
-  },
-  "object": {
-    "id": objectID,
-    "definition": {
-      "name": {
-        "en-US": activityTitle
-      },
-      "description": {
-        "en-US": activityDesc
-      },
-      "type": "https://w3id.org/xapi/video/activity-type/video"
+{
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
     },
-    "objectType": "Activity"
-  },
-  "result": {
-    "extensions": {
-      "https://w3id.org/xapi/video/extensions/time": resultExtTime,
-    }
-  },
-  "context": {
-    "contextActivities": {
-      "category": [{
-        "id": "https://w3id.org/xapi/video"
-      }]
+    "verb": {
+        "id": "https://w3id.org/xapi/video/verbs/played",
+        "display": {
+            "en-US": "played"
+        }
     },
-    "extensions": {
-      "https://w3id.org/xapi/video/extensions/session-id": sessionID
-
-    }
-  },
-};
+    "timestamp": "2018-08-07T15:27:52.376Z",
+    "object": {
+        "definition": {
+            "type": "https://w3id.org/xapi/video/activity-type/video",
+            "name": {
+                "en-US": "Ocean Life"
+            },
+            "description": {
+                "en-US": "A short video clip of ocean lifeforms, used by videojs.com as part of their demo."
+            }
+        },
+        "id": "http://vjs.zencdn.net/v/oceans.mp4",
+        "objectType": "Activity"
+    },
+    "result": {
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/time": 0
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "https://w3id.org/xapi/video"
+                }
+            ]
+        },
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/session-id": "86c5b148-4462-4da9-a13f-b570c27fa049",
+            "https://w3id.org/xapi/video/extensions/length": 46.613333
+        },
+        "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
+    },
+    "id": "ac522d8a-ed56-4a5e-bc86-14067aec4101",
+}
 ```
 
 ## Paused
