@@ -1,6 +1,6 @@
-# Templates
+# Statement Template Examples
 
-The following template statements are provided for your convenience and conform to the video profile requirements.
+The following example statements are provided for your convenience and conform to the video profile requirements.
 
 ## Initialized
 
@@ -108,7 +108,7 @@ The following template statements are provided for your convenience and conform 
         },
         "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
     },
-    "id": "ac522d8a-ed56-4a5e-bc86-14067aec4101",
+    "id": "ac522d8a-ed56-4a5e-bc86-14067aec4101"
 }
 ```
 
@@ -162,11 +162,11 @@ The following template statements are provided for your convenience and conform 
         },
         "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
     },
-    "id": "587c8e19-3a5e-4be2-ba09-9c6b68c4fb20",
+    "id": "587c8e19-3a5e-4be2-ba09-9c6b68c4fb20"
 }
 ```
 
-## Seeked
+## Seeked \(Change Video Playback from 4.473 Seconds to 1.9 Seconds \)
 
 ```
 {
@@ -214,59 +214,273 @@ The following template statements are provided for your convenience and conform 
         },
         "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
     },
-    "id": "4183175b-a6b0-4e59-8614-fd9c0d2593dd",
+    "id": "4183175b-a6b0-4e59-8614-fd9c0d2593dd"
 }
 ```
 
-## Interacted
+## Interacted Event \(Change to Full Screen\)
 
 ```
-var interactedStatement = {
-  "actor": actor,
-  "verb": {
-    "id": "http://adlnet.gov/expapi/verbs/interacted",
-    "display": {
-      "en-US": "interacted"
-    }
-  },
-  "object": {
-    "id": objectID,
-    "definition": {
-      "name": {
-        "en-US": activityTitle
-      },
-      "description": {
-        "en-US": activityDesc
-      },
-      "type": "https://w3id.org/xapi/video/activity-type/video"
+{
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
     },
-    "objectType": "Activity"
-  },
-  "result": {
-    "extensions": {
-      "https://w3id.org/xapi/video/extensions/time": resultExtTime
-    }
-  },
-  "context": {
-    "contextActivities": {
-      "category": [{
-        "id": "https://w3id.org/xapi/video"
-      }]
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/interacted",
+        "display": {
+            "en-US": "interacted"
+        }
     },
-    "extensions": {
-      "https://w3id.org/xapi/video/extensions/full-screen": fullScreenOrNot,
-      "https://w3id.org/xapi/video/extensions/screen-size": screenSize,
-      "https://w3id.org/xapi/video/extensions/video-playback-size": playbackSize,
-      "https://w3id.org/xapi/video/extensions/quality": quality,
-      "https://w3id.org/xapi/video/extensions/cc-enabled": ccEnabled,
-      "https://w3id.org/xapi/video/extensions/cc-subtitle-lang": ccLanguage,
-      "https://w3id.org/xapi/video/extensions/speed": playbackRate + "x",
-      "https://w3id.org/xapi/video/extensions/user-agent": userAgent,
-      "https://w3id.org/xapi/video/extensions/volume": volume,
-      "https://w3id.org/xapi/video/extensions/session-id": sessionID
-    }
-  },
-};
+    "timestamp": "2018-08-07T15:41:59.549Z",
+    "object": {
+        "definition": {
+            "type": "https://w3id.org/xapi/video/activity-type/video",
+            "name": {
+                "en-US": "Ocean Life"
+            },
+            "description": {
+                "en-US": "A short video clip of ocean lifeforms, used by videojs.com as part of their demo."
+            }
+        },
+        "id": "http://vjs.zencdn.net/v/oceans.mp4",
+        "objectType": "Activity"
+    },
+    "result": {
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/time": 10.096
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "https://w3id.org/xapi/video"
+                }
+            ]
+        },
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/session-id": "86c5b148-4462-4da9-a13f-b570c27fa049",
+            "https://w3id.org/xapi/video/extensions/video-playback-size": "1122x1177",
+            "https://w3id.org/xapi/video/extensions/screen-size": "2560x1440",
+            "https://w3id.org/xapi/video/extensions/full-screen": true
+        },
+        "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
+    },
+    "id": "abe55d73-ffb3-4093-ab1a-424592c119ee"
+}
+```
+
+## Interacted Event \(Change Back to Original Screen Size\)
+
+```
+{
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/interacted",
+        "display": {
+            "en-US": "interacted"
+        }
+    },
+    "timestamp": "2018-08-07T15:42:03.400Z",
+    "object": {
+        "definition": {
+            "type": "https://w3id.org/xapi/video/activity-type/video",
+            "name": {
+                "en-US": "Ocean Life"
+            },
+            "description": {
+                "en-US": "A short video clip of ocean lifeforms, used by videojs.com as part of their demo."
+            }
+        },
+        "id": "http://vjs.zencdn.net/v/oceans.mp4",
+        "objectType": "Activity"
+    },
+    "result": {
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/time": 13.947
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "https://w3id.org/xapi/video"
+                }
+            ]
+        },
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/session-id": "86c5b148-4462-4da9-a13f-b570c27fa049",
+            "https://w3id.org/xapi/video/extensions/video-playback-size": "640x264",
+            "https://w3id.org/xapi/video/extensions/screen-size": "2560x1440",
+            "https://w3id.org/xapi/video/extensions/full-screen": false
+        },
+        "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
+    },
+    "id": "c3371384-4598-43f2-b1b3-86be5df66ed5"
+}
+```
+
+## Interacted Event \(Change Volume to Muted\)
+
+```
+{
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/interacted",
+        "display": {
+            "en-US": "interacted"
+        }
+    },
+    "timestamp": "2018-08-07T15:42:12.016Z",
+    "object": {
+        "definition": {
+            "type": "https://w3id.org/xapi/video/activity-type/video",
+            "name": {
+                "en-US": "Ocean Life"
+            },
+            "description": {
+                "en-US": "A short video clip of ocean lifeforms, used by videojs.com as part of their demo."
+            }
+        },
+        "id": "http://vjs.zencdn.net/v/oceans.mp4",
+        "objectType": "Activity"
+    },
+    "result": {
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/time": 20.536
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "https://w3id.org/xapi/video"
+                }
+            ]
+        },
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/volume": 0,
+            "https://w3id.org/xapi/video/extensions/session-id": "86c5b148-4462-4da9-a13f-b570c27fa049"
+        },
+        "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
+    },
+    "id": "eb6ca563-1e61-4776-a5b0-2a23be8e43b0"
+}
+```
+
+## Interacted Event \(Change Volume to Unmuted\)
+
+```
+{
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/interacted",
+        "display": {
+            "en-US": "interacted"
+        }
+    },
+    "timestamp": "2018-08-07T15:42:15.443Z",
+    "object": {
+        "definition": {
+            "type": "https://w3id.org/xapi/video/activity-type/video",
+            "name": {
+                "en-US": "Ocean Life"
+            },
+            "description": {
+                "en-US": "A short video clip of ocean lifeforms, used by videojs.com as part of their demo."
+            }
+        },
+        "id": "http://vjs.zencdn.net/v/oceans.mp4",
+        "objectType": "Activity"
+    },
+    "result": {
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/time": 24.036
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "https://w3id.org/xapi/video"
+                }
+            ]
+        },
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/volume": 1,
+            "https://w3id.org/xapi/video/extensions/session-id": "86c5b148-4462-4da9-a13f-b570c27fa049"
+        },
+        "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
+    },
+    "id": "f48f70b2-505e-46ae-a562-19fcae19f2ae"
+}
+```
+
+## Interacted \(Enabled Closed Captioning\)
+
+```
+{
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/interacted",
+        "display": {
+            "en-US": "interacted"
+        }
+    },
+    "timestamp": "2018-08-07T15:42:20.066Z",
+    "object": {
+        "definition": {
+            "type": "https://w3id.org/xapi/video/activity-type/video",
+            "name": {
+                "en-US": "Ocean Life"
+            },
+            "description": {
+                "en-US": "A short video clip of ocean lifeforms, used by videojs.com as part of their demo."
+            }
+        },
+        "id": "http://vjs.zencdn.net/v/oceans.mp4",
+        "objectType": "Activity"
+    },
+    "result": {
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/time": 28.799
+        }
+    },
+    "context": {
+        "contextActivities": {
+            "category": [
+                {
+                    "id": "https://w3id.org/xapi/video"
+                }
+            ]
+        },
+        "extensions": {
+            "https://w3id.org/xapi/video/extensions/session-id": "86c5b148-4462-4da9-a13f-b570c27fa049",
+            "https://w3id.org/xapi/video/extensions/cc-subtitle-lang": "en",
+            "https://w3id.org/xapi/video/extensions/cc-enabled": true
+        },
+        "registration": "96094a33-cc66-4d9a-8810-a0850ae2a4e1"
+    },
+    "id": "f71a5b62-53d5-4794-aa75-7e0dc2570eed"
+}
 ```
 
 ## Completed
