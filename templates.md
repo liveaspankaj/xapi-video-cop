@@ -487,17 +487,13 @@ The following example statements are provided for your convenience and conform t
 
 ```
 {
-    "actor": {
-        "mbox": "mailto:jlh@example.com",
-        "name": "Video User",
-        "objectType": "Agent"
-    },
     "verb": {
         "id": "http://adlnet.gov/expapi/verbs/completed",
         "display": {
             "en-US": "completed"
         }
     },
+    "version": "1.0.0",
     "timestamp": "2018-08-07T16:10:24.158Z",
     "object": {
         "definition": {
@@ -512,6 +508,12 @@ The following example statements are provided for your convenience and conform t
         "id": "http://vjs.zencdn.net/v/oceans.mp4",
         "objectType": "Activity"
     },
+    "actor": {
+        "mbox": "mailto:jlh@example.com",
+        "name": "Video User",
+        "objectType": "Agent"
+    },
+    "stored": "2018-08-07T16:10:24.275840+00:00",
     "result": {
         "completion": true,
         "extensions": {
@@ -535,7 +537,12 @@ The following example statements are provided for your convenience and conform t
         },
         "registration": "70ec479c-a37d-4407-89ad-9727313e71dc"
     },
-    "id": "019b33ec-4426-40b7-b296-54f05cb9291e"
+    "id": "019b33ec-4426-40b7-b296-54f05cb9291e",
+    "authority": {
+        "mbox": "mailto:video-user@somedomain.com",
+        "name": "video-profile",
+        "objectType": "Agent"
+    }
 }
 ```
 
