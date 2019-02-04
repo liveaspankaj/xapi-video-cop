@@ -1,4 +1,8 @@
-WORK IN PROGRESS: This document is a work in progress and may contain incomplete or inaccurate information. 
+WORK IN PROGRESS: This is a Release Candidate 1 (RC1), and may undergo breaking changes before the release if any major issues are identified. Please submit any issues and suggestions to: 
+https://github.com/liveaspankaj/xapi-video-cop/issues
+
+Expected Version 1.0 release announcement: April 2019
+
 
 
 #2. xAPI Statement Data Model
