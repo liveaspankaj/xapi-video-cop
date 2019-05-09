@@ -634,6 +634,9 @@ The value must be RFC 5646, e.g en, en-US, etc
 <th align="left">Interacted</th>
 <td>
 
+<ul>
+<li>Context Extensions for which the value has changed during interaction MUST be included</li>
+</ul>
 </td>
 
 <td>
