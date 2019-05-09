@@ -20,7 +20,7 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
 
 ## xAPI Video CoP Members List
 
-* URL: http://bit.ly/1yHdp43 
+* URL: http://bit.ly/1yHdp43  (to be updated) 
 
 
 ## xAPI Video Profile (current version)
