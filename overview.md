@@ -4,15 +4,13 @@ This Video Profile built by xAPI Video Community of Practice describes Experienc
 
 ## Version
 
-Current version is: Release Candidate 1 \(RC1\)
-
-Please submit any issues and suggestions to: [https://github.com/liveaspankaj/xapi-video-cop/issues](https://github.com/liveaspankaj/xapi-video-cop/issues)  
-Expected Version 1.0 release announcement: April 2019
+Current version is: xAPI Video Profile v1.0
 
 ## History
 
 | Date | Event |
 | :--- | :--- |
+| May 9th, 2019 | Version 1.0 |
 | Feb 4th, 2019 | Release Candidate 1 \(RC1\) |
 | Jan 21st, 2015 | First Meeting |
 
