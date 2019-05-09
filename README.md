@@ -28,7 +28,7 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
 
 ## xAPI Video Profile (current version)
 
-<b>Current Version:</b> Release Candidate 1 (RC1)
+<b>Current Version:</b> v1.0
 
 [Online Version](https://liveaspankaj.gitbooks.io/xapi-video-profile/content/SUMMARY.html) 
 
