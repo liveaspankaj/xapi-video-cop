@@ -702,7 +702,6 @@ The value must be RFC 5646, e.g en, en-US, etc
 <td>
 <b>Context Extensions</b>
 <ul>
-<li>Session ID</li>
 <li>Length</li>
 <li>Completion Threshold (if value < 1)</li>
 </ul>
