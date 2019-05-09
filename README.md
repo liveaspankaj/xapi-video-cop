@@ -17,9 +17,6 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
 
 * URL: https://groups.google.com/forum/#!members/xapi-video-cop
 
-## xAPI Video CoP General Information
-
-* URL: http://bit.ly/1BB4pOH
 
 ## xAPI Video CoP Members List
 
