@@ -574,6 +574,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <td>
 <b>Context Extensions</b>
 <ul>
+<li>Length</li>
 <li>Completion Threshold (if value < 1)</li>
 </ul>
 <br>
@@ -582,7 +583,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <li>Time</li>
 <li>Progress</li>
 <li>Played Segments</li>
-</ul>plat
+</ul>
 </td>
 
 <td>
@@ -660,6 +661,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <td>
 <b>Context Extensions</b>
 <ul>
+<li>Length</li>
 <li>Completion Threshold (if value < 1)</li>
 </ul>
 <br>
@@ -698,6 +700,7 @@ The value must be RFC 5646, e.g en, en-US, etc
 <b>Context Extensions</b>
 <ul>
 <li>Session ID</li>
+<li>Length</li>
 <li>Completion Threshold (if value < 1)</li>
 </ul>
 <br>
