@@ -610,13 +610,13 @@ The value must be RFC 5646, e.g en, en-US, etc
 <td>
 <b>Context Extensions</b>
 <ul>
+<li>Length</li>
 <li>Session ID</li>
 </ul>
 <br>
 
 <b>Result Extensions</b>
 <ul>
-<li>Length</li>
 <li>Progress</li>
 <li>Played Segments</li>
 </ul>
