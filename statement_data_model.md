@@ -634,14 +634,14 @@ The value must be RFC 5646, e.g en, en-US, etc
 <ul>
 <li>Context Extensions for which the value has changed during interaction MUST be included</li>
 </ul>
-</td>
 <br>
-
-
 <b>Result Extensions</b>
 <ul>
 <li>Time</li>
 </ul>
+
+</td>
+
 
 <td>
 <b>Context Extensions
