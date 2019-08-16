@@ -1,6 +1,6 @@
 # xAPI Video Community of Practice
 
-This community is creating a profile of the xAPI to identify and standardize video interactions that can be tracked.
+This is an official ADL community to build a profile of the xAPI to identify and standardize video interactions that can be tracked. The profile is known as **xAPI Video Profile**. 
 
 ## xAPI Video CoP Meetings
 
