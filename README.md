@@ -18,7 +18,7 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
 * URL: https://groups.google.com/forum/#!members/xapi-video-cop
 
 
-## xAPI Video CoP Members List
+## xAPI Video CoP Contributors 
 
 <table cellspacing="0" cellpadding="0" dir="ltr" border="1" style="table-layout: fixed; font-size: 10pt; font-family: arial, sans, sans-serif; width: 0px; border-collapse: collapse; border: none;">
    <colgroup>
@@ -26,12 +26,12 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
       <col width="309">
    </colgroup>
    <tbody>
-      <tr>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-size: 12pt; font-weight: bold; border: 1px solid rgb(204, 204, 204);">Name</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-size: 12pt; font-weight: bold; border: 1px solid rgb(204, 204, 204);">Company</td>
+      <tr style="font-weight:bold;">
+         <td>Name</td>
+         <td>Company</td>
       </tr>
       <tr>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">Pankaj Agrawal</td>
+         <td>Pankaj Agrawal</td>
          <td>Next Software Solutions</td>
       </tr>
       <tr>
@@ -44,11 +44,11 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
       </tr>
       <tr>
          <td>Jason Haag</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">ADL &amp; Veracity</td>
+         <td>ADL &amp; Veracity</td>
       </tr>
       <tr>
          <td>Anthony Altieri</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">RedCross</td>
+         <td>RedCross</td>
       </tr>
       <tr>
          <td>Patrick Selby</td>
@@ -56,11 +56,11 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
       </tr>
       <tr>
          <td>Mark Grant</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+         <td></td>
       </tr>
       <tr>
          <td>Charles Touron</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);">US ARMY</td>
+         <td>US ARMY</td>
       </tr>
       <tr>
          <td>Craig Wiggins</td>
@@ -88,7 +88,7 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
       </tr>
       <tr>
          <td>Christopher Thompson</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+         <td></td>
       </tr>
       <tr>
          <td>Daniel Latourelle</td>
@@ -100,7 +100,7 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
       </tr>
       <tr>
          <td>Ingo Dahn</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">University of Koblenz-Landau</td>
+         <td>University of Koblenz-Landau</td>
       </tr>
       <tr>
          <td>J Pablo Caballero</td>
@@ -108,7 +108,7 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
       </tr>
       <tr>
          <td>Jeff Segall</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+         <td></td>
       </tr>
       <tr>
          <td>Jessie Chuang</td>
@@ -120,7 +120,7 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
       </tr>
       <tr>
          <td>Marko Grolo</td>
-         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+         <td></td>
       </tr>
       <tr>
          <td>Michael Stordeur</td>
