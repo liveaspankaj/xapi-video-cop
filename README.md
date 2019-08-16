@@ -1,14 +1,17 @@
 # xAPI Video Community of Practice
 
-This community is creating profile of the xAPI to identify and standardize video interactions that can be tracked.
+This community is creating a profile of the xAPI to identify and standardize video interactions that can be tracked.
 
 ## xAPI Video CoP Meetings
 
-The xAPI Video Community of Practice has a Web conference every month to actively work on the project.
+Meetings have been suspended since the release of xAPI Video Profile v1.0
 
-**Day/Time:** 1st Mondays of every month at 3:00-4:00PM US Eastern Time<Br>
+For any questions, or to request for a meeting, please contact the Chair of the Group: 
 
-**Meeting Link:** https://www.nextsoftwaresolutions.com/VideoCoPMeeting/ 
+**Pankaj Agrawal**
+contact@pankajagrawal.com  
+
+or raise a [GitHub ticket](https://github.com/liveaspankaj/xapi-video-cop/issues). 
 
 Please visit the Wiki for details and Meeting Minutes:  
 https://github.com/liveaspankaj/xapi-video-cop/wiki
@@ -140,11 +143,11 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
 
 ## xAPI Video Profile (current version)
 
-<b>Current Version:</b> xAPI Video Profile v1.0
+**Current Version:** xAPI Video Profile v1.0
 
 [Online Version](https://liveaspankaj.gitbooks.io/xapi-video-profile/content/SUMMARY.html) 
 
-<b>Downloads:</b> [PDF](https://www.gitbook.com/download/pdf/book/liveaspankaj/xapi-video-profile) | [Mobi](https://www.gitbook.com/download/mobi/book/liveaspankaj/xapi-video-profile) | [ePub](https://www.gitbook.com/download/epub/book/liveaspankaj/xapi-video-profile) 
+**Downloads:**  [PDF](https://www.gitbook.com/download/pdf/book/liveaspankaj/xapi-video-profile) | [Mobi](https://www.gitbook.com/download/mobi/book/liveaspankaj/xapi-video-profile) | [ePub](https://www.gitbook.com/download/epub/book/liveaspankaj/xapi-video-profile) 
 
 ## License
 Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
