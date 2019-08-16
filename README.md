@@ -20,7 +20,122 @@ https://github.com/liveaspankaj/xapi-video-cop/wiki
 
 ## xAPI Video CoP Members List
 
-* URL: http://bit.ly/1yHdp43  (to be updated) 
+<table cellspacing="0" cellpadding="0" dir="ltr" border="1" style="table-layout: fixed; font-size: 10pt; font-family: arial, sans, sans-serif; width: 0px; border-collapse: collapse; border: none;">
+   <colgroup>
+      <col width="243">
+      <col width="309">
+   </colgroup>
+   <tbody>
+      <tr>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-size: 12pt; font-weight: bold; border: 1px solid rgb(204, 204, 204);">Name</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-size: 12pt; font-weight: bold; border: 1px solid rgb(204, 204, 204);">Company</td>
+      </tr>
+      <tr>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">Pankaj Agrawal</td>
+         <td>Next Software Solutions</td>
+      </tr>
+      <tr>
+         <td>Humera Shazia</td>
+         <td>Next Software Solutions</td>
+      </tr>
+      <tr>
+         <td>Jonathan Mark Kevan</td>
+         <td>University of Hawaii at Manoa</td>
+      </tr>
+      <tr>
+         <td>Jason Haag</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">ADL &amp; Veracity</td>
+      </tr>
+      <tr>
+         <td>Anthony Altieri</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">RedCross</td>
+      </tr>
+      <tr>
+         <td>Patrick Selby</td>
+         <td>LexisNexis</td>
+      </tr>
+      <tr>
+         <td>Mark Grant</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+      </tr>
+      <tr>
+         <td>Charles Touron</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);">US ARMY</td>
+      </tr>
+      <tr>
+         <td>Craig Wiggins</td>
+         <td>ADL</td>
+      </tr>
+      <tr>
+         <td>Andy Johnson</td>
+         <td>ADL</td>
+      </tr>
+      <tr>
+         <td>Bill McDonald</td>
+         <td>cmi5 working group leader</td>
+      </tr>
+      <tr>
+         <td>Henry Ryng</td>
+         <td>inXsol</td>
+      </tr>
+      <tr>
+         <td>Adam Cooper</td>
+         <td>Cetis, University of Bolton, UK</td>
+      </tr>
+      <tr>
+         <td>Andrew Downes</td>
+         <td>Rustici</td>
+      </tr>
+      <tr>
+         <td>Christopher Thompson</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+      </tr>
+      <tr>
+         <td>Daniel Latourelle</td>
+         <td></td>
+      </tr>
+      <tr>
+         <td>Florian Tolk</td>
+         <td>ADL</td>
+      </tr>
+      <tr>
+         <td>Ingo Dahn</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; font-family: Arial; font-size: 12pt; color: rgb(36, 41, 46); border: 1px solid rgb(204, 204, 204);">University of Koblenz-Landau</td>
+      </tr>
+      <tr>
+         <td>J Pablo Caballero</td>
+         <td>Acutilis s.l</td>
+      </tr>
+      <tr>
+         <td>Jeff Segall</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+      </tr>
+      <tr>
+         <td>Jessie Chuang</td>
+         <td>Classroom Aid Inc.</td>
+      </tr>
+      <tr>
+         <td>John Costa</td>
+         <td>IEEE ADB/RePubIT</td>
+      </tr>
+      <tr>
+         <td>Marko Grolo</td>
+         <td style="overflow: hidden; padding: 2px 3px; vertical-align: bottom; border: 1px solid rgb(204, 204, 204);"></td>
+      </tr>
+      <tr>
+         <td>Michael Stordeur</td>
+         <td>JDI Software</td>
+      </tr>
+      <tr>
+         <td>Trey Hayden</td>
+         <td>ADL</td>
+      </tr>
+      <tr>
+         <td>Vincent</td>
+         <td></td>
+      </tr>
+   </tbody>
+</table>
 
 
 ## xAPI Video Profile (current version)
